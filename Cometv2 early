@@ -1,4 +1,4 @@
-local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ICECREAMPROGAMER7473/githubfan3758329373475293859785728482/main/GuiLibary"))()
+local lib = loadstring(game:HttpGet("https://github.com/8pmX8/rektsky4roblox/blob/main/NewRektskyUiLib.lua"))()
 local getasset = getsynasset or getcustomasset
 local ScreenGuitwo = game:GetService("CoreGui").RektskyNotificationGui
 local lplr = game:GetService("Players").LocalPlayer
