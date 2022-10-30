@@ -1456,7 +1456,7 @@ end)
 runcode(function()
     local Enabled = false
     local EmeraldsExploit = Tabs["Exploits"]:CreateToggle({
-        ["Name"] = "GrabEmeralds",
+        ["Name"] = "PickUpEmeralds",
         ["Callback"] = function(Callback)
             Enabled = Callback
             if Enabled then
@@ -1468,10 +1468,25 @@ runcode(function()
     })
 end)
  
+ runcode(function()
+    local Enabled = false
+    local DiamondsExploit = Tabs["Exploits"]:CreateToggle({
+        ["Name"] = "PickupDiamonds",
+        ["Callback"] = function(Callback)
+            Enabled = Callback
+            if Enabled then
+                spawn(function()
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").ItemDrops.diamond.CFrame
+                end)
+            end
+        end
+    })
+end)
+ 
 runcode(function()
     local Enabled = false
     local Skywars = Tabs["Exploits"]:CreateToggle({
-        ["Name"] = "AutoSkywars",
+        ["Name"] = "AutoWin",
         ["Callback"] = function(Callback)
             Enabled = Callback
             if Enabled then
