@@ -1254,7 +1254,7 @@ end)
 runcode(function()
     local Enabled = false
     local StoneExploit = Tabs["Exploits"]:CreateToggle({
-        ["Name"] = "SwordExploit",
+        ["Name"] = "StoneExploit",
         ["Callback"] = function(Callback)
             Enabled = Callback
             if Enabled then
@@ -1462,21 +1462,6 @@ runcode(function()
             if Enabled then
                 spawn(function()
                 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").ItemDrops.emerald.CFrame
-                end)
-            end
-        end
-    })
-end)
- 
- runcode(function()
-    local Enabled = false
-    local DiamondsExploit = Tabs["Exploits"]:CreateToggle({
-        ["Name"] = "PickupDiamonds",
-        ["Callback"] = function(Callback)
-            Enabled = Callback
-            if Enabled then
-                spawn(function()
-                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").ItemDrops.diamond.CFrame
                 end)
             end
         end
