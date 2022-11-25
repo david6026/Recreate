@@ -3,8 +3,8 @@ local Window = Library.CreateLib("MICRO HUB 1.0.1b  |  PRIVATE", "DarkTheme")
 
 
 --MAIN
-local Tab = Window:NewTab("TXT")
-local MainSection = Tab:NewSection("Thing")
+local Tab = Window:NewTab("Combat")
+local MainSection = Tab:NewSection("Things")
 
 
 MainSection:NewButton("TEXTURE PACK", "yes", function()
