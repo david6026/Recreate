@@ -4,7 +4,7 @@ local Id = game.Players.LocalPlayer
 
 for i, v in pairs(IdTable) do
 if not v == Id.PlayerId then
-game.Players.LocalPlayer:Kick("Not whitelisted dummy")
+
 else
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("MICRO HUB 1.0.1b  |  PRIVATE", "DarkTheme")
